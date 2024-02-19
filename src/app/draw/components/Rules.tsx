@@ -1,3 +1,6 @@
+'use cliente'
+
+import { ScrollArea } from '@/components/ui/scroll-area'
 import * as React from 'react'
 
 const data = [
@@ -40,13 +43,15 @@ const data = [
 
 export function RulesItens() {
   return (
-    <div className="flex flex-col py-2">
-      {data.map((item) => (
-        <div className="" key={item.name}>
-          <p className="font-bold">{item.name}</p>
-          <p className="font-semibold">{item.description}</p>
-        </div>
-      ))}
+    <div className="flex items-center justify-center py-1">
+      <ScrollArea className="flex h-[20em] items-center justify-center rounded-md border p-4 lg:h-[40em]">
+        {data.map((item) => (
+          <div className="mt-1 flex flex-col" key={item.name}>
+            <p className="font-bold">{item.name}</p>
+            <p className="font-semibold">{item.description}</p>
+          </div>
+        ))}
+      </ScrollArea>
     </div>
   )
 }
