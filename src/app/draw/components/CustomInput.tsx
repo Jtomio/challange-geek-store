@@ -64,7 +64,7 @@ function formatPhone(phone: string): string {
 }
 
 export default function CustomInput() {
-  const [isAccepted, setisAccepted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(true)
   const [cpfValue, setCpfValue] = useState('')
   const [cupomValue, setCupomValue] = useState('')
   const [phoneValue, setPhoneValue] = useState('')
@@ -89,11 +89,9 @@ export default function CustomInput() {
   }
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const formattedEmail = validarEmail(event.target.value)
-    if (formattedEmail) {
-      setEmailValue(event.target.value)
-    } else {
-      // Você pode exibir uma mensagem de erro ou tomar outra ação aqui
+    setEmailValue(event.target.value)
+    const isValidEmail = validarEmail(event.target.value)
+    if (!isValidEmail) {
       console.log('E-mail inválido')
     }
   }
@@ -113,6 +111,7 @@ export default function CustomInput() {
     setCpfValue('')
     setEmailValue('')
     setPhoneValue('')
+    setIsSubmitted(true)
   }
 
   return (
@@ -176,7 +175,10 @@ export default function CustomInput() {
           <div className="flex flex-col space-y-1.5">
             <Drawer>
               <DrawerTrigger asChild>
-                <Button variant="ghost" className="my-2">
+                <Button
+                  variant="ghost"
+                  className="my-2 font-semibold text-red-400"
+                >
                   Visualizar regras para participar
                 </Button>
               </DrawerTrigger>
@@ -192,7 +194,7 @@ export default function CustomInput() {
 
                   <DrawerFooter>
                     <DrawerClose asChild>
-                      <Button onClick={() => setisAccepted(true)}>
+                      <Button onClick={() => setIsSubmitted(false)}>
                         Aceitar
                       </Button>
                     </DrawerClose>
@@ -205,9 +207,9 @@ export default function CustomInput() {
         <CardFooter className="flex justify-between">
           <Button variant="outline">Cancelar</Button>
           <Button
-            disabled={!isAccepted}
-            className={!isAccepted ? 'cursor-not-allowed' : ''}
             type="submit"
+            disabled={isSubmitted}
+            className={` ${!isSubmitted ? '' : 'disabled:cursor-not-allowed'}`}
           >
             Enviar
           </Button>
