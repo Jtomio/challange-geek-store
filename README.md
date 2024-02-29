@@ -4,6 +4,7 @@ Projeto realizado com [Next.js](https://nextjs.org/).
 # Desafio Banco de Dados II
 
 Trata-se do desenvolvimento de um site fícticio de vendas *GEEK*, onde foi criado um página para cadastro dos clientes à participarem de um sorteio. 
+
 ## Referência
 
  - [Next.js](https://nextjs.org/docs)
@@ -23,7 +24,7 @@ Trata-se do desenvolvimento de um site fícticio de vendas *GEEK*, onde foi cria
 
 ## Demonstração
 
-Insira um gif ou um link de alguma demonstração
+- [Wireframe do Desafio](https://challange-geek-store.vercel.app/wireframe)
 
 
 ## Funcionalidades
@@ -31,13 +32,3 @@ Insira um gif ou um link de alguma demonstração
 - Temas dark e light
 - Responsividades de telas
 - Multiplataforma
-
-
-## Instalação
-
-Clone esse repostório com o link
-
-```bash
- git clone https://github.com/Jtomio/challange-geek-store.git
-```
-    
