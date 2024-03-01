@@ -22,7 +22,15 @@ Trata-se do desenvolvimento de um site fícticio de vendas *GEEK*, onde foi cria
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
 
-## Demonstração
+## Perguntas do Desafio
+
+- [Questionário do Desafio](https://challange-geek-store.vercel.app/faq)
+
+## Deploy no Vercel
+
+- [Deploy do Repositório](https://challange-geek-store.vercel.app/draw)
+
+## Wireframe 
 
 - [Wireframe do Desafio](https://challange-geek-store.vercel.app/wireframe)
 
