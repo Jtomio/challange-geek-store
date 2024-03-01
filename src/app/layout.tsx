@@ -28,9 +28,15 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="container">
-            <Navbar />
-            <div className="h-screen">{children}</div>
-            <Footer />
+            <div className="flex min-h-screen flex-col">
+              <div className="mb-auto">
+                <Navbar />
+                <main className="">{children}</main>
+              </div>
+              <div className="w-full">
+                <Footer />
+              </div>
+            </div>
             <Toaster />
           </div>
         </ThemeProvider>

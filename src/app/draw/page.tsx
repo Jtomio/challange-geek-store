@@ -13,8 +13,9 @@ import CustomInput from './components/CustomInput'
 
 export default function page() {
   return (
-    <div className="flex items-center justify-center">
-      <Card className="w-[550px]">
+    <div className="flex min-h-screen flex-col items-center">
+      <p className="py-4 text-2xl font-bold">Cadastra-se na promoção</p>
+      <Card className="w-[20em] md:w-[500px] lg:w-[650px]">
         <CardHeader>
           <CardTitle>Cadastrar código</CardTitle>
           <CardDescription>

@@ -5,7 +5,7 @@ import { SiTailwindcss, SiVercel } from 'react-icons/si'
 
 export default function Footer() {
   return (
-    <div className="mx-auto max-w-screen-xl space-y-8 overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
+    <div className="mx-auto space-y-8 overflow-hidden py-12">
       <Separator className="bg-primary" />
       <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
         <div className="px-5 py-2">
