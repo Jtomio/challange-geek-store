@@ -117,11 +117,13 @@ export function Question() {
           <AccordionContent>
             O Protótipo do projeto foi desenvolvido com{' '}
             <Link
-              href={''}
+              href={
+                'https://www.figma.com/file/kEAG1tF9lCycfGXB2zWyMp/Tomio-Geek---Sorteio?type=design&node-id=4%3A3&mode=design&t=DoavFvd0sgiQSgQE-1'
+              }
               target="_blank"
               className="text-indigo-500 underline"
             >
-              Figma
+              Figmas
             </Link>
           </AccordionContent>
         </AccordionItem>

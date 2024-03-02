@@ -2,6 +2,7 @@ import React from 'react'
 import { Separator } from './ui/separator'
 import { FaFigma, FaGithub } from 'react-icons/fa'
 import { SiTailwindcss, SiVercel } from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 
 export default function Footer() {
   return (
@@ -51,12 +52,20 @@ export default function Footer() {
       </nav>
       <div className="mt-8 flex justify-center space-x-6">
         <a
-          href="https://vercel.com/dashboard"
+          href="https://www.figma.com/"
           className="text-gray-400 hover:cursor-pointer hover:text-primary"
           target="_blank"
         >
           <span className="sr-only">Figma</span>
           <FaFigma size={24} />
+        </a>
+        <a
+          href="https://nextjs.org/docs"
+          className="text-gray-400 hover:cursor-pointer hover:text-primary"
+          target="_blank"
+        >
+          <span className="sr-only">Next.js</span>
+          <TbBrandNextjs size={24} />
         </a>
         <a
           href="https://vercel.com/dashboard"
