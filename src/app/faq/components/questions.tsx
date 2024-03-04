@@ -11,12 +11,12 @@ export function Question() {
     <div className="max-h-[calc(100vh-4rem)] overflow-auto">
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
-          <AccordionTrigger className="font-bold">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
             1 - Para a coleta de requisitos deste projeto, eu utilizaria os
             seguintes métodos.
           </AccordionTrigger>
           <AccordionContent className="gap-4 px-8 text-justify">
-            <ol className="list-disc py-2">
+            <ol className="list-disc py-2 text-sm sm:text-base md:text-lg">
               <div className="flex flex-col gap-2">
                 <li>
                   <span className="font-bold">
@@ -52,11 +52,11 @@ export function Question() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger className="font-bold">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
             2 - Crie uma Persona para o Usuário, que irá cadastrar o cupom.
           </AccordionTrigger>
           <AccordionContent className="gap-4 px-8 text-justify">
-            <p className="">
+            <p className="text-sm sm:text-base md:text-lg">
               {' '}
               A <span className="font-bold">Persona</span> trás um usuário que
               consome aritigos <span className="italic">GEEK.</span> chamado
@@ -65,7 +65,7 @@ export function Question() {
               de mesa.
             </p>
             <br />
-            <p className="">
+            <p className="text-sm sm:text-base md:text-lg">
               {' '}
               Veja o perfil completo da persona
               <span>
@@ -73,7 +73,7 @@ export function Question() {
                 <Link
                   href={'/persona'}
                   target="_blank"
-                  className="text-indigo-500 underline"
+                  className="text-sm text-indigo-500 underline sm:text-base md:text-lg"
                 >
                   Aqui
                 </Link>
@@ -82,10 +82,10 @@ export function Question() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger className="font-bold">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
             3 - Crie um Wireframe manual, ou, utilizando uma ferramenta.
           </AccordionTrigger>
-          <AccordionContent className="gap-4 px-8 text-justify">
+          <AccordionContent className="gap-4 px-8 text-justify text-sm sm:text-base md:text-lg">
             <p className="">
               Para o desenvolvimento do{' '}
               <span className="font-bold">WIREFRAME</span> veja sua criação com
@@ -109,12 +109,12 @@ export function Question() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger className="font-bold">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
             4 - Crie um Protótipo, para demonstrar o produto, mais próximo do
             real. Se quiser, pode criar um Protótipo real e informar o link do
             Projeto.
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-sm sm:text-base md:text-lg">
             O Protótipo do projeto foi desenvolvido com{' '}
             <Link
               href={
@@ -128,13 +128,13 @@ export function Question() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <AccordionTrigger className="font-bold">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
             5 - Por fim, faça uma análise de seu Protótipo e verifique se está
             respeitando às Heurísticas de Nielsen; que são pertinentes ao
             Projeto.
           </AccordionTrigger>
           <AccordionContent>
-            <ol className="list-disc overflow-auto py-8">
+            <ol className="list-disc py-8  text-sm sm:text-base md:text-lg">
               <div className="flex flex-col gap-2">
                 <li>
                   <span className="font-bold">
