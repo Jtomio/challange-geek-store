@@ -24,12 +24,12 @@ const item = [
   {
     title: 'Desafios',
     description:
-      'Um dos maiores desafios de Lucas é encontrar produtos de alta qualidade a preços acessíveis. Ele também às vezes tem dificuldade em encontrar itens raros ou exclusivos.',
+      'Um dos maiores desafios de Natan é encontrar produtos de alta qualidade a preços acessíveis. Ele também às vezes tem dificuldade em encontrar itens raros ou exclusivos.',
   },
   {
     title: 'Forma de comunicação preferida',
     description:
-      'Diploma de bacharel em Ciência da Computação. Ele trabalha como desenvolvedor de software em uma empresa de tecnologia.',
+      'A forma preferida de comunicação é através por mensagens instantâneas e e-mail.',
   },
 ]
 
@@ -42,7 +42,7 @@ export default function DescriptionContent() {
           key={items.title}
         >
           <p className="text-md mb-4 font-bold text-primary">{items.title}</p>
-          <p className="text-md ">{items.description}</p>
+          <p className="text-md text-justify">{items.description}</p>
         </div>
       ))}
     </div>

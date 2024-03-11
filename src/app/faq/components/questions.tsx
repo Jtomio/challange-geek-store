@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import Link from 'next/link'
+import { FaFigma, FaGithub, FaNetworkWired } from 'react-icons/fa'
 
 export function Question() {
   return (
@@ -123,7 +124,7 @@ export function Question() {
               target="_blank"
               className="text-indigo-500 underline"
             >
-              Figmas
+              Figma
             </Link>
           </AccordionContent>
         </AccordionItem>
@@ -210,6 +211,41 @@ export function Question() {
                 </li>
               </div>
             </ol>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-6">
+          <AccordionTrigger className="text-sm font-bold sm:text-base md:text-lg">
+            6 - Links de referências
+          </AccordionTrigger>
+          <AccordionContent>
+            <div className="flex items-center gap-4 px-4">
+              <Link
+                href={'https://github.com/Jtomio/challange-geek-store'}
+                target="_blank"
+                className="flex items-center gap-2 text-sm sm:text-base md:text-lg"
+              >
+                <FaGithub size={30} />
+                <span className="hover:text-primary">Repositório Github</span>
+              </Link>
+              <Link
+                href={
+                  'https://www.figma.com/file/kEAG1tF9lCycfGXB2zWyMp/Tomio-Geek---Sorteio?type=design&node-id=4%3A3&mode=design&t=DoavFvd0sgiQSgQE-1'
+                }
+                target="_blank"
+                className="flex items-center gap-2 text-sm sm:text-base md:text-lg"
+              >
+                <FaFigma size={30} />
+                <span className="hover:text-primary">Figma Protótipo</span>
+              </Link>
+              <Link
+                href={'https://challange-geek-store.vercel.app/wireframe'}
+                target="_blank"
+                className="flex items-center gap-2 text-sm sm:text-base md:text-lg"
+              >
+                <FaNetworkWired size={30} />
+                <span className="hover:text-primary">Wireframe</span>
+              </Link>
+            </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
