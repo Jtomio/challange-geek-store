@@ -73,7 +73,7 @@ export function CarouselPageHome() {
                     className="object-fill"
                   />
                   <span className="sr-only">{i.category}</span>
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 transition-opacity duration-300 ease-in-out group-hover:bg-opacity-50">
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 transition-opacity duration-300 ease-in-out hover:rounded-md group-hover:bg-opacity-50">
                     <span className="hidden text-xl font-semibold text-white group-hover:block">
                       {i.category}
                     </span>

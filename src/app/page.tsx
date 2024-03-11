@@ -7,18 +7,21 @@ import {
   CardDescription,
   CardTitle,
 } from '@/components/ui/card'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="flex h-full w-full items-center justify-center">
-          <Image
-            src={BannerImg}
-            alt="Imagem banner página principal"
-            width={1500}
-            className="h-full w-full"
-          />
+          <Link href={'/draw'}>
+            <Image
+              src={BannerImg}
+              alt="Imagem banner página principal"
+              width={1500}
+              className="h-full w-full hover:cursor-pointer"
+            />
+          </Link>
         </div>
         <h1 className="my-4 text-xl">Confira nossos Categorias</h1>
         <CarouselPageHome />
